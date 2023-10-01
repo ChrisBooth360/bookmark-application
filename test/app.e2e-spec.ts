@@ -242,7 +242,6 @@ describe('App e2e', () => {
             Authorization: 'Bearer $S{userAt}',
           })
           .expectStatus(204)
-          .inspect()
       });
       it('should get empty bookmarks', () => {
         return pactum
