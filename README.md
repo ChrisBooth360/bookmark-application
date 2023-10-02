@@ -1,5 +1,22 @@
 # Bookmark Application - NestJS Project
-This is a NestJS project for a simple bookmark management application. It allows users to sign up, sign in, create, edit, and delete bookmarks. The project uses Prisma as the ORM for database operations and JWT for authentication. Below is an overview of the project's file structure and functionalities.
+This is a NestJS project for a simple bookmark management application. It allows users to sign up, sign in, create, edit, and delete bookmarks. The project uses Prisma as the ORM for database operations and JWT for authentication. Below is how to get started and an overview of the project's file structure and functionalities.
+
+## Getting Started
+1. Clone the repository:
+
+`git clone <repository_url>`
+
+2. Install dependencies:
+
+`cd <project_directory>`
+`yarn install`
+
+3. Configure environment variables:
+* Create a .env file for development and a .env.test file for testing.
+* Define the DATABASE_URL and JWT_SECRET variables in both files.
+
+4. Start the development database (PostgreSQL) using Docker Compose:
+* yarn db:
 
 ## File Structure
 ### Prisma Schema (../prisma/schema.prisma)
@@ -87,20 +104,3 @@ This is a NestJS project for a simple bookmark management application. It allows
 * This file extends the TypeScript configuration for building the application.
 ### TypeScript Configuration (tsconfig.json)
 * This file contains TypeScript compiler options for the project.
-
-## Getting Started
-1. Clone the repository:
-
-`git clone <repository_url>`
-
-2. Install dependencies:
-
-`cd <project_directory>`
-`yarn install`
-
-3. Configure environment variables:
-* Create a .env file for development and a .env.test file for testing.
-* Define the DATABASE_URL and JWT_SECRET variables in both files.
-
-4. Start the development database (PostgreSQL) using Docker Compose:
-* yarn db:
