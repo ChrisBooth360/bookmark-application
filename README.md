@@ -9,6 +9,7 @@ This is a NestJS project for a simple bookmark management application. It allows
 2. Install dependencies:
 
 `cd <project_directory>`
+
 `yarn install`
 
 3. Configure environment variables:
